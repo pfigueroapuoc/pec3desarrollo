@@ -109,34 +109,28 @@ También se pueden mencionar secciones de la misma forma: ver sección
 \subsection{Configurar el repositorio}\label{sec:repositorio}
 \begin{enumerate}
   \item Se configura un usuario para identificarse al hacer los committs en git con:
+  
 	git config --global user.name "pfigueroap"
-	git config --global user.email ?pfigueroap@uoc.edu?  
+	
+	git config --global user.email "pfigueroap@uoc.edu"  
 
   \begin{figure}[H]
    \centering
-    \includegraphics[width=1.0\textwidth]{imagenes/usu}
+    \includegraphics[width=1.0\textwidth]{imagenes/repo2}
   	 \caption{Configuraci\'on de usuario en git}
   	  \label{fig:usuario}
 	\end{figure}
 	
-  \item Se crea el directorio que se va subir en git y se inicializa 
-  
-   \begin{figure}[H]
-   \centering
-    \includegraphics[width=1.0\textwidth]{imagenes/repo2}
-  	 \caption{Creación e inicializaci\'on del repositorio}
-  	  \label{fig:directorio}
-	\end{figure}
-  
-  \item Se copian los dos archivos filtros.c y filtros.h en la carpeta y se verificar que el .git en el repositorio se encuentre creado
-  
-   \begin{figure}[H]
+  \item Se inicializan el repositorio con: git init  
+  \begin{figure}[H]
    \centering
     \includegraphics[width=1.0\textwidth]{imagenes/repo4}
   	 \caption{Copiar filtro.c y filtro.h}
   	  \label{fig:repo4}
 	\end{figure}
 	
+  \item Se copian los dos archivos filtros.c y filtros.h en la carpeta /libsrc y se verificar que el .git en el repositorio se encuentre creado
+  	
    \begin{figure}[H]
    \centering
     \includegraphics[width=1.0\textwidth]{imagenes/repo5}
@@ -144,7 +138,7 @@ También se pueden mencionar secciones de la misma forma: ver sección
   	  \label{fig:repo5}
 	\end{figure}
 	
-   \item Se crea un fichero README en el directorio libsrc
+   \item Se crea un fichero README en el directorio principal
    
    \begin{figure}[H]
    \centering
@@ -159,9 +153,9 @@ También se pueden mencionar secciones de la misma forma: ver sección
    
 	git add README
 	
-	git add filtros.c
+	git add /libsrc/filtros.c
 	
-	git add filtros.h
+	git add /libsrc/filtros.h
 	
    Para añadir todo de una vez:
    
@@ -207,17 +201,17 @@ También se pueden mencionar secciones de la misma forma: ver sección
 	\item Agregar el repositorio a github en www.github.com
 	 \begin{figure}[H]
    	  \centering
-    	   \includegraphics[width=1.0\textwidth]{imagenes/repo10}
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo11}
   	    \caption{Crear un repositorio en github}
-  	     \label{fig:repo10}
+  	     \label{fig:repo11}
 	 \end{figure}
 
 	\item Se crea el repositorio llenando el formulario:
 	 \begin{figure}[H]
    	  \centering
-    	   \includegraphics[width=1.0\textwidth]{imagenes/repo12}
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo10}
   	    \caption{Crear un repositorio en github}
-  	     \label{fig:repo12}
+  	     \label{fig:repo10}
 	 \end{figure}	
 	 
 	\item Con el siguiente comando agregamos el repositorio que ya existe, con esta linea se le indica a git cual el repositorio remoto donde se alojaran los archivos:
@@ -252,7 +246,7 @@ El cual solicita el login y contraseña de Github
  \begin{enumerate}
  \item En caso de que otra persona o el mismo creador desee obtener una copia local del repositorio deberá ingresar el comando 
 
-git clone https://github.com/pfigueroapuoc/libsrc.git
+git clone https://github.com/pfigueroapuoc/pec3desarrollo.git
 
 	 \begin{figure}[H]
    	  \centering
@@ -280,13 +274,6 @@ git clone https://github.com/pfigueroapuoc/libsrc.git
 	 \end{figure}
 
  \item Se verifica el email y ya se puede acceder al repositorio.
-
-	 \begin{figure}[H]
-   	  \centering
-    	   \includegraphics[width=1.0\textwidth]{imagenes/repo18}
-  	    \caption{Obtener una copia local de un repositorio}
-  	     \label{fig:repo18}
-	 \end{figure}
 
 	 \begin{figure}[H]
    	  \centering
