@@ -1,0 +1,787 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\comment begin body}
+{\info 
+{\title {\comment PEC3 }PEC3}
+{\comment Generated byDoxgyen. }
+{\creatim \yr2015\mo12\dy5\hr23\min52\sec8}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt TITLE}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt CREATEDATE}}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Control de Versiones y Documentaci\'F3n\par \pard\plain 
+{\tc \v Control de Versiones y Documentaci\'F3n}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Control de versiones
+\par}
+{\tc\tcl2 \v Control de versiones}
+\par}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Introducci\'F3n
+\par}
+{\tc\tcl2 \v Introducci\'F3n}
+En la presente documentaci\'F3n encontrar\'E1 informaci\'F3n relacionada con las funciones filtro.c y filtro.h desarrolladas en c, para realizar esta documentaci\'F3n se us\'F3 Doxygen.\par
+Mientras que en la segunda encontrar\'E1 las cabeceras de cada una de estas funciones.\par
+Por cada archivo ({\b filtros.h} y {\b filtros.c}) de la copia local del dep\'F3sito se encuentran los comentarios de cabecera en el que, usando siempre etiquetas de Doxygen, se indica, de forma resumida y tambi\'E9n de forma detallada, qu\'E9 se encuentra en el archivo, el autor y la fecha en la que se genera la documentaci\'F3n.\par
+La documentaci\'F3n se gener\'F3 en formato html en un directorio llamdo doc.\par
+La idea de esta secci\'F3n de la PEC es desarrollar habilidades en la documentaci\'F3n de un producto de desarrollo de software\par
+Finalmente toda esta informaci\'F3n se encuentra almacenada en el repositorio local libsrc y adicionalmente en el repositorio remoto en github. \par}
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all documented files with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/{\b filtros.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A continuaci\'F3n se presentan varias funciones que permite preparar archivos dependiendo del filtro seleccionado })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/{\b filtros.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cabeceras de las filtros ofrecidos en {\b filtros.c} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/filtros.c File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/filtros.c}
+{\xe \v D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/filtros.c}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A continuaci\'F3n se presentan varias funciones que permite preparar archivos dependiendo del filtro seleccionado. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <unistd.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include "filtres.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b printstr} (int num)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+printstr: Es una funci\'F3n auxiliar que permite imprimir los contadores de caracteres, palabras, lineas de los filtros fs_wc y fs_nl }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_head} (int fd)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_head: Este filtro mostrar\'E1 las tres primeras l\'EDneas le\'EDdas. Las l\'EDneas est\'E1n separadas por el car\'E1cter salto de l\'EDnea '\\ n' }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_wc} (int fd)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_wc: Este filtro contar\'E1 el n\'FAmero de caracteres, palabras y l\'EDneas de la entrada y lo mostrar\'E1 por pantalla }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_nl} (int fd)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_nl: Este filtro numera les l\'EDneas de la entrada. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_cut} (int fd, int col)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_cut: Este filtro muestra la palabra en la posici\'F3n col de cada l\'EDnea }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A continuaci\'F3n se presentan varias funciones que permite preparar archivos dependiendo del filtro seleccionado. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Se tienen cuatro funciones principales:\par
+fs_head, fs_wc, fs_nl y fs_cut\par
+Cada filtro de estos aplicado a un archivo de texto permite obtener diferentes salidas a partir del mismo\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid Paula Figueroa.\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid 04/12/2015. \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v fs_cut\:filtros.c}
+{\xe \v filtros.c\:fs_cut}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_cut (int  {\i fd}, int  {\i col})}}
+\par
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_cut: Este filtro muestra la palabra en la posici\'F3n col de cada l\'EDnea }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: El filtro recibe el archivo y la columna por la cual se quiere cortar el archivo, la primera palabra de cada l\'EDnea estar\'E1 en la posici\'F3n 1, por lo que si se ingresa 1 se mostrar\'E1 la primera palabra de cada l\'EDnea que encuentra en el archivo.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve el archivo partido seg\'FAn la columna seleccionada\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i col} \cell }{entero que indica la posici\'F3n de la columna se desea imprimir en el archivo.\cell }
+{\row }
+}
+Ejemplo: {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    el\par
+    leves\par
+    sol\par
+    de\par
+    llama\par
+    besar\par
+    hasta\par
+    rio\par
+}
+ \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< Se debe tener en cuenta el salto de l\'EDnea\par
+< e ir contando la cantidad de palabras si estas son mayores o iguales al n\'FAmero ingresado en col se debe imprimir en pantalla. Para controlar que no se imprima saltos de linea en caso que la primera l\'EDnea se encuentre vac\'EDa se debe ingresar en la condici\'F3n que nc es mayor o igual a cero. \par
+}}
+{\xe \v fs_head\:filtros.c}
+{\xe \v filtros.c\:fs_head}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_head (int  {\i fd})}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_head: Este filtro mostrar\'E1 las tres primeras l\'EDneas le\'EDdas. Las l\'EDneas est\'E1n separadas por el car\'E1cter salto de l\'EDnea '\\ n' }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: Este filtro esta compuesto por un contador llamado count inicializado en cero y un caracter c. Con un ciclo while se recorre el archivo caracter a caracter usando la funci\'F3n read, cuando encuentra un salto de l\'EDnea incrementa count hasta que este sea 3 o mayor e imprime.\par
+Ejemplo: {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid  El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve las tres primeras l\'EDneas del archivo de texto\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< count: variable que se declara dentro de la funci\'F3n, tipo entero, es un contador que permite determinar la cantidad de lineas que se tienen en un texto, cada vez que dentro del while se encuentra un salto de l\'EDnea se incrementa el contador, una vez llega a 3 se sale del ciclo.\par
+< c: es una variable que se declara dentro de la funci\'F3n, tipo caracter en el cual se ir\'E1 almacenando el caracter que se lee en el ciclo while\par
+< read: requiere del archivo que se va leer (fd), se le asigna la direcci\'F3n de memoria de c (&c) para que aqu\'ED almacene cada caracteres leido y el 1 le indica que es de 1 a 1. Mientras el contador sea menor a 3 se escribe cada caracter con el comando\par
+< write: si se encuentra un salto de l\'EDnea se incrementa el contador, de esta manera se controla que se escriban las tres primeras l\'EDneas.\par
+< El if permite ir incrementando el count cuando c sea un salto de linea \par
+}}
+{\xe \v fs_nl\:filtros.c}
+{\xe \v filtros.c\:fs_nl}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_nl (int  {\i fd})}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_nl: Este filtro numera les l\'EDneas de la entrada. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: Este filtro permite enumerar cada l\'EDnea en el archivo de texto. Por ejemplo {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    1 Besa el aura que gime blandamente\par
+    2 Las leves ondas que jugando riza;\par
+    3 El sol besa a la nube en occidente\par
+    4 Y de purpura y oro la matiza;\par
+    5 La llama en derredor del tronco ardiente\par
+    6 Por besar a otra llama se desliza,\par
+    7 Y hasta el sauce, inclinandose a su peso,\par
+    8 Al rio, que le besa, vuelve un beso.\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve cada l\'EDnea numerada\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< new es una bandera para controlar las lineas, cada vez que encuentra un salto de l\'EDnea coloca el n\'FAmero que va acumulando en la variable nl\par
+< Usa printstr para imprimir los n\'FAmeros al inicio de cada l\'EDnea de texto\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid void {\b printstr(int num)} \par
+}}}
+{\xe \v fs_wc\:filtros.c}
+{\xe \v filtros.c\:fs_wc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_wc (int  {\i fd})}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_wc: Este filtro contar\'E1 el n\'FAmero de caracteres, palabras y l\'EDneas de la entrada y lo mostrar\'E1 por pantalla }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: Este filtro cuenta los caracteres, palabras y l\'EDneas, dados por los separadores. Los separadores de palabras son los caracteres salto de l\'EDnea '\\ n', tabulador '\\ t' y espacio en blanco '', y como separador de l\'EDneas s\'F3lo el salto de l\'EDnea '\\ n'. Dos palabras pueden estar separadas por 1 o m\'E1s caracteres separadores\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve la cantidad de caracteres, palabras y l\'EDneas que tiene un archivo de texto.\par
+}Ejemplo: {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid  El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    281 58 8\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< nl: contador de l\'EDneas np: contador de palabras nc: contador de caracteres sep es una bandera para controlar la cantidad de delimitadores que puedan separar una palabra\par
+< c: donde se almancer\'E1 cada caracter leido del archivo\par
+< nc++: cada vez que se lea un caracter en el archivo se incrementa el contador\par
+< Si el valor almacenado en c al recorrer el archivo es un salto de l\'EDnea se incrementa nl\par
+< Si es un espacio o un tabulador se pasa al siguiente case donde se evalua\par
+< Si sep es diferente de 0 se incrementa la palabra y se hace sep = 1\par
+< Si sep es 1 es porque encontr\'F3 un delimitador de palabra ya sea tabulador o espacio\par
+< En cualquier caso que no encuentre ning\'FAn delimitador sep siempre ser\'E1 0\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid void {\b printstr(int num)} \par
+}}}
+{\xe \v printstr\:filtros.c}
+{\xe \v filtros.c\:printstr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void printstr (int  {\i num})}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+printstr: Es una funci\'F3n auxiliar que permite imprimir los contadores de caracteres, palabras, lineas de los filtros fs_wc y fs_nl }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: Ingresa un entero que se va recorriendo con un ciclo for controlado por una variable i, a medida que se recorre el n\'FAmero se incrementa aux El puntero nstr reserva espacios de memoria con la funci\'F3n malloc y la cantidad va dada por el incremento de aux + 2 Luego se imprime, seg\'FAn el tama\'F1o o el puntero nstr que fue dado la instrucci\'F3n malloc, en formato entero (d) y lo que se imprime es lo que ingresa en el num Y se escribe con la funci\'F3n write en el nstr y por \'FAltimo se libera la memoria con free.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i num} \cell }{es un n\'FAmero para controlar el tama\'F1o del puntero controlado por el ciclo \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+aux, i: son variables tipo entero que representan contadores i es para ir recorriendo cada num ingresado mientras que aux controla la memoria asignada al apuntador, ambas inicializan en 1.\par
+nstr: puntero tipo char \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/filtros.h File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/filtros.h}
+{\xe \v D:/Dropbox/UniversidadMaestr\'EDa/Semestre III/DESARROLLO DE SOFTWARE/PEC 3/Archivos/filtros.h}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cabeceras de las filtros ofrecidos en {\b filtros.c}. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_head} (int fd)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_head: Este filtro mostrar\'E1 las tres primeras l\'EDneas le\'EDdas. Las l\'EDneas est\'E1n separadas por el car\'E1cter salto de l\'EDnea '\\ n' }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_wc} (int fd)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_wc: Este filtro contar\'E1 el n\'FAmero de caracteres, palabras y l\'EDneas de la entrada y lo mostrar\'E1 por pantalla }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_nl} (int fd)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_nl: Este filtro numera les l\'EDneas de la entrada. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fs_cut} (int fd, int col)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_cut: Este filtro muestra la palabra en la posici\'F3n col de cada l\'EDnea }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cabeceras de las filtros ofrecidos en {\b filtros.c}. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Se listas los filtros principales:\par
+fs_head, fs_wc, fs_nl y fs_cut\par
+Cada filtro tiene como entrada un archivo representado por la variable (fd), y fs_cut tiene un par\'E1metro adicional que es un entero el cual indica la columna a imprimir\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid Paula Figueroa.\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid 04/12/2015. \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v fs_cut\:filtros.h}
+{\xe \v filtros.h\:fs_cut}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_cut (int  {\i fd}, int  {\i col})}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_cut: Este filtro muestra la palabra en la posici\'F3n col de cada l\'EDnea }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: El filtro recibe el archivo y la columna por la cual se quiere cortar el archivo, la primera palabra de cada l\'EDnea estar\'E1 en la posici\'F3n 1, por lo que si se ingresa 1 se mostrar\'E1 la primera palabra de cada l\'EDnea que encuentra en el archivo.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve el archivo partido seg\'FAn la columna seleccionada\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i col} \cell }{entero que indica la posici\'F3n de la columna se desea imprimir en el archivo.\cell }
+{\row }
+}
+Ejemplo: {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    el\par
+    leves\par
+    sol\par
+    de\par
+    llama\par
+    besar\par
+    hasta\par
+    rio\par
+}
+ \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< Se debe tener en cuenta el salto de l\'EDnea\par
+< e ir contando la cantidad de palabras si estas son mayores o iguales al n\'FAmero ingresado en col se debe imprimir en pantalla. Para controlar que no se imprima saltos de linea en caso que la primera l\'EDnea se encuentre vac\'EDa se debe ingresar en la condici\'F3n que nc es mayor o igual a cero. \par
+}}
+{\xe \v fs_head\:filtros.h}
+{\xe \v filtros.h\:fs_head}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_head (int  {\i fd})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_head: Este filtro mostrar\'E1 las tres primeras l\'EDneas le\'EDdas. Las l\'EDneas est\'E1n separadas por el car\'E1cter salto de l\'EDnea '\\ n' }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: Este filtro esta compuesto por un contador llamado count inicializado en cero y un caracter c. Con un ciclo while se recorre el archivo caracter a caracter usando la funci\'F3n read, cuando encuentra un salto de l\'EDnea incrementa count hasta que este sea 3 o mayor e imprime.\par
+Ejemplo: {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid  El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve las tres primeras l\'EDneas del archivo de texto\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< count: variable que se declara dentro de la funci\'F3n, tipo entero, es un contador que permite determinar la cantidad de lineas que se tienen en un texto, cada vez que dentro del while se encuentra un salto de l\'EDnea se incrementa el contador, una vez llega a 3 se sale del ciclo.\par
+< c: es una variable que se declara dentro de la funci\'F3n, tipo caracter en el cual se ir\'E1 almacenando el caracter que se lee en el ciclo while\par
+< read: requiere del archivo que se va leer (fd), se le asigna la direcci\'F3n de memoria de c (&c) para que aqu\'ED almacene cada caracteres leido y el 1 le indica que es de 1 a 1. Mientras el contador sea menor a 3 se escribe cada caracter con el comando\par
+< write: si se encuentra un salto de l\'EDnea se incrementa el contador, de esta manera se controla que se escriban las tres primeras l\'EDneas.\par
+< El if permite ir incrementando el count cuando c sea un salto de linea \par
+}}
+{\xe \v fs_nl\:filtros.h}
+{\xe \v filtros.h\:fs_nl}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_nl (int  {\i fd})}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_nl: Este filtro numera les l\'EDneas de la entrada. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: Este filtro permite enumerar cada l\'EDnea en el archivo de texto. Por ejemplo {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    1 Besa el aura que gime blandamente\par
+    2 Las leves ondas que jugando riza;\par
+    3 El sol besa a la nube en occidente\par
+    4 Y de purpura y oro la matiza;\par
+    5 La llama en derredor del tronco ardiente\par
+    6 Por besar a otra llama se desliza,\par
+    7 Y hasta el sauce, inclinandose a su peso,\par
+    8 Al rio, que le besa, vuelve un beso.\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve cada l\'EDnea numerada\par
+}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< new es una bandera para controlar las lineas, cada vez que encuentra un salto de l\'EDnea coloca el n\'FAmero que va acumulando en la variable nl\par
+< Usa printstr para imprimir los n\'FAmeros al inicio de cada l\'EDnea de texto\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid void {\b printstr(int num)} \par
+}}}
+{\xe \v fs_wc\:filtros.h}
+{\xe \v filtros.h\:fs_wc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fs_wc (int  {\i fd})}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+fs_wc: Este filtro contar\'E1 el n\'FAmero de caracteres, palabras y l\'EDneas de la entrada y lo mostrar\'E1 por pantalla }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Descripci\'F3n: Este filtro cuenta los caracteres, palabras y l\'EDneas, dados por los separadores. Los separadores de palabras son los caracteres salto de l\'EDnea '\\ n', tabulador '\\ t' y espacio en blanco '', y como separador de l\'EDneas s\'F3lo el salto de l\'EDnea '\\ n'. Dos palabras pueden estar separadas por 1 o m\'E1s caracteres separadores\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Devuelve la cantidad de caracteres, palabras y l\'EDneas que tiene un archivo de texto.\par
+}Ejemplo: {
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid  El archivo de texto de entrada es:\par
+    Besa el aura que gime blandamente\par
+    Las leves ondas que jugando riza;\par
+    El sol besa a la nube en occidente\par
+    Y de purpura y oro la matiza;\par
+    La llama en derredor del tronco ardiente\par
+    Por besar a otra llama se desliza,\par
+    Y hasta el sauce, inclinandose a su peso,\par
+    Al rio, que le besa, vuelve un beso.\par
+    \par
+ La salida es:\par
+    281 58 8\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i fd} \cell }{variable de entrada la cual es un archivo de texto seleccionado por el usuario \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< nl: contador de l\'EDneas np: contador de palabras nc: contador de caracteres sep es una bandera para controlar la cantidad de delimitadores que puedan separar una palabra\par
+< c: donde se almancer\'E1 cada caracter leido del archivo\par
+< nc++: cada vez que se lea un caracter en el archivo se incrementa el contador\par
+< Si el valor almacenado en c al recorrer el archivo es un salto de l\'EDnea se incrementa nl\par
+< Si es un espacio o un tabulador se pasa al siguiente case donde se evalua\par
+< Si sep es diferente de 0 se incrementa la palabra y se hace sep = 1\par
+< Si sep es 1 es porque encontr\'F3 un delimitador de palabra ya sea tabulador o espacio\par
+< En cualquier caso que no encuentre ning\'FAn delimitador sep siempre ser\'E1 0\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid void {\b printstr(int num)} \par
+}}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

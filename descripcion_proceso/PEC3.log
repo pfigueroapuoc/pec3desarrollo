@@ -1,0 +1,541 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.12.5)  14 DEC 2015 21:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**PEC3.tex
+(./PEC3.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2014/01/29 v5.0m Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\es@datefmt=\count88
+\es@quottoks=\toks16
+\es@quotdepth=\count89
+Package babel Info: Making " an active character on input line 496.
+Package babel Info: Making . an active character on input line 599.
+Package babel Info: Making < an active character on input line 644.
+Package babel Info: Making > an active character on input line 644.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks18
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks19
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks29
+\float@box=\box28
+\@float@everytoks=\toks30
+\@floatcapt=\box29
+)
+\c@thm=\count104
+
+No file PEC3.aux.
+\openout1 = `PEC3.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen115
+\scratchbox=\box30
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen116
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks32
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<imagenes/instalagit.png, id=1, 357.335pt x 40.15pt>
+File: imagenes/instalagit.png Graphic file (type png)
+
+<use imagenes/instalagit.png>
+Package pdftex.def Info: imagenes/instalagit.png used on input line 89.
+(pdftex.def)             Requested size: 241.49895pt x 27.13498pt.
+
+<imagenes/registrargithub.png, id=2, 1028.84375pt x 469.755pt>
+File: imagenes/registrargithub.png Graphic file (type png)
+
+<use imagenes/registrargithub.png>
+Package pdftex.def Info: imagenes/registrargithub.png used on input line 98.
+(pdftex.def)             Requested size: 241.49895pt x 110.26341pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <imagenes/usu.png, id=12, 
+685.56125pt x 39.14626pt>
+File: imagenes/usu.png Graphic file (type png)
+
+<use imagenes/usu.png>
+Package pdftex.def Info: imagenes/usu.png used on input line 117.
+(pdftex.def)             Requested size: 345.0pt x 19.7003pt.
+ <imagenes/repo2.png, id=13, 626.34pt x 100.375pt>
+File: imagenes/repo2.png Graphic file (type png)
+
+<use imagenes/repo2.png>
+Package pdftex.def Info: imagenes/repo2.png used on input line 126.
+(pdftex.def)             Requested size: 345.0pt x 55.29065pt.
+ <imagenes/repo4.png, id=14, 555.57562pt x 205.5178pt>
+File: imagenes/repo4.png Graphic file (type png)
+
+<use imagenes/repo4.png>
+Package pdftex.def Info: imagenes/repo4.png used on input line 135.
+(pdftex.def)             Requested size: 345.0pt x 127.62355pt.
+ [2 <./imagenes/instalagit.png> <./imagenes/registrargithub.png> <./imagenes/us
+u.png> <./imagenes/repo2.png>]
+<imagenes/repo5.png, id=19, 490.83376pt x 146.5475pt>
+File: imagenes/repo5.png Graphic file (type png)
+ <use imagenes/repo5.png>
+Package pdftex.def Info: imagenes/repo5.png used on input line 142.
+(pdftex.def)             Requested size: 345.0pt x 103.00963pt.
+
+<imagenes/repo3.png, id=20, 807.015pt x 245.91875pt>
+File: imagenes/repo3.png Graphic file (type png)
+ <use imagenes/repo3.png>
+Package pdftex.def Info: imagenes/repo3.png used on input line 151.
+(pdftex.def)             Requested size: 345.0pt x 105.13135pt.
+
+[3 <./imagenes/repo4.png> <./imagenes/repo5.png> <./imagenes/repo3.png>]
+<imagenes/repo6.png, id=25, 469.755pt x 82.3075pt>
+File: imagenes/repo6.png Graphic file (type png)
+ <use imagenes/repo6.png>
+Package pdftex.def Info: imagenes/repo6.png used on input line 172.
+(pdftex.def)             Requested size: 345.0pt x 60.44817pt.
+
+<imagenes/repo7.png, id=26, 544.0325pt x 211.79124pt>
+File: imagenes/repo7.png Graphic file (type png)
+ <use imagenes/repo7.png>
+Package pdftex.def Info: imagenes/repo7.png used on input line 180.
+(pdftex.def)             Requested size: 345.0pt x 134.31467pt.
+
+<imagenes/repo8.png, id=27, 723.70375pt x 146.5475pt>
+File: imagenes/repo8.png Graphic file (type png)
+ <use imagenes/repo8.png>
+Package pdftex.def Info: imagenes/repo8.png used on input line 188.
+(pdftex.def)             Requested size: 345.0pt x 69.86122pt.
+
+<imagenes/repo9.png, id=28, 601.24625pt x 114.4275pt>
+File: imagenes/repo9.png Graphic file (type png)
+ <use imagenes/repo9.png>
+Package pdftex.def Info: imagenes/repo9.png used on input line 196.
+(pdftex.def)             Requested size: 345.0pt x 65.66084pt.
+
+[4 <./imagenes/repo6.png> <./imagenes/repo7.png> <./imagenes/repo8.png>]
+<imagenes/repo10.png, id=32, 437.635pt x 132.495pt>
+File: imagenes/repo10.png Graphic file (type png)
+ <use imagenes/repo10.png>
+Package pdftex.def Info: imagenes/repo10.png used on input line 210.
+(pdftex.def)             Requested size: 345.0pt x 104.45154pt.
+
+<imagenes/repo12.png, id=33, 698.61pt x 210.7875pt>
+File: imagenes/repo12.png Graphic file (type png)
+ <use imagenes/repo12.png>
+Package pdftex.def Info: imagenes/repo12.png used on input line 218.
+(pdftex.def)             Requested size: 345.0pt x 104.09409pt.
+
+<imagenes/repo13.png, id=34, 726.715pt x 217.81375pt>
+File: imagenes/repo13.png Graphic file (type png)
+
+<use imagenes/repo13.png>
+Package pdftex.def Info: imagenes/repo13.png used on input line 235.
+(pdftex.def)             Requested size: 345.0pt x 103.4061pt.
+ [5 <./imagenes/repo9.png> <./imagenes/repo10.png> <./imagenes/repo12.png>] <im
+agenes/repo14.png, id=38, 616.3025pt x 420.57124pt>
+File: imagenes/repo14.png Graphic file (type png)
+
+<use imagenes/repo14.png>
+Package pdftex.def Info: imagenes/repo14.png used on input line 243.
+(pdftex.def)             Requested size: 345.0pt x 235.43486pt.
+
+<imagenes/repo15.png, id=39, 724.7075pt x 311.1625pt>
+File: imagenes/repo15.png Graphic file (type png)
+
+<use imagenes/repo15.png>
+Package pdftex.def Info: imagenes/repo15.png used on input line 259.
+(pdftex.def)             Requested size: 345.0pt x 148.13133pt.
+ [6 <./imagenes/repo13.png> <./imagenes/repo14.png>]
+<imagenes/repo16.png, id=43, 437.635pt x 52.195pt>
+File: imagenes/repo16.png Graphic file (type png)
+ <use imagenes/repo16.png>
+Package pdftex.def Info: imagenes/repo16.png used on input line 267.
+(pdftex.def)             Requested size: 345.0pt x 41.14757pt.
+
+<imagenes/repo17.PNG, id=44, 773.89125pt x 59.47218pt>
+File: imagenes/repo17.PNG Graphic file (type png)
+
+<use imagenes/repo17.PNG>
+Package pdftex.def Info: imagenes/repo17.PNG used on input line 277.
+(pdftex.def)             Requested size: 345.0pt x 26.51266pt.
+
+<imagenes/repo18.PNG, id=45, 800.9925pt x 403.5075pt>
+File: imagenes/repo18.PNG Graphic file (type png)
+
+<use imagenes/repo18.PNG>
+Package pdftex.def Info: imagenes/repo18.PNG used on input line 286.
+(pdftex.def)             Requested size: 345.0pt x 173.80037pt.
+ [7 <./imagenes/repo15.png> <./imagenes/repo16.png> <./imagenes/repo17.PNG>] <i
+magenes/repo19.PNG, id=51, 790.45313pt x 495.35063pt>
+File: imagenes/repo19.PNG Graphic file (type png)
+
+<use imagenes/repo19.PNG>
+Package pdftex.def Info: imagenes/repo19.PNG used on input line 293.
+(pdftex.def)             Requested size: 345.0pt x 216.20139pt.
+ [8 <./imagenes/repo18.PNG> <./imagenes/repo19.PNG>]
+<imagenes/doxy1.PNG, id=57, 1053.1847pt x 255.95625pt>
+File: imagenes/doxy1.PNG Graphic file (type png)
+
+<use imagenes/doxy1.PNG>
+Package pdftex.def Info: imagenes/doxy1.PNG used on input line 313.
+(pdftex.def)             Requested size: 345.0pt x 83.84483pt.
+
+<imagenes/doxy10.PNG, id=58, 1248.91594pt x 36.88782pt>
+File: imagenes/doxy10.PNG Graphic file (type png)
+
+<use imagenes/doxy10.PNG>
+Package pdftex.def Info: imagenes/doxy10.PNG used on input line 331.
+(pdftex.def)             Requested size: 345.0pt x 10.18948pt.
+
+<imagenes/doxy11.PNG, id=59, 1065.9825pt x 39.89906pt>
+File: imagenes/doxy11.PNG Graphic file (type png)
+
+<use imagenes/doxy11.PNG>
+Package pdftex.def Info: imagenes/doxy11.PNG used on input line 337.
+(pdftex.def)             Requested size: 345.0pt x 12.91284pt.
+
+<imagenes/doxy2.PNG, id=60, 1187.18532pt x 230.36063pt>
+File: imagenes/doxy2.PNG Graphic file (type png)
+
+<use imagenes/doxy2.PNG>
+Package pdftex.def Info: imagenes/doxy2.PNG used on input line 347.
+(pdftex.def)             Requested size: 345.0pt x 66.94347pt.
+ [9 <./imagenes/doxy1.PNG> <./imagenes/doxy10.PNG> <./imagenes/doxy11.PNG> <./i
+magenes/doxy2.PNG>]
+<imagenes/doxy3.PNG, id=68, 622.57594pt x 498.36188pt>
+File: imagenes/doxy3.PNG Graphic file (type png)
+
+<use imagenes/doxy3.PNG>
+Package pdftex.def Info: imagenes/doxy3.PNG used on input line 358.
+(pdftex.def)             Requested size: 345.0pt x 276.16826pt.
+ <imagenes/doxy4.PNG, id=69, 626.34pt x 497.60907pt>
+File: imagenes/doxy4.PNG Graphic file (type png)
+
+<use imagenes/doxy4.PNG>
+Package pdftex.def Info: imagenes/doxy4.PNG used on input line 366.
+(pdftex.def)             Requested size: 345.0pt x 274.10344pt.
+ [10 <./imagenes/doxy3.PNG>]
+<imagenes/doxy5.PNG, id=74, 624.83438pt x 497.60907pt>
+File: imagenes/doxy5.PNG Graphic file (type png)
+
+<use imagenes/doxy5.PNG>
+Package pdftex.def Info: imagenes/doxy5.PNG used on input line 374.
+(pdftex.def)             Requested size: 345.0pt x 274.75642pt.
+ [11 <./imagenes/doxy4.PNG>]
+<imagenes/doxy6.PNG, id=79, 626.34pt x 497.60907pt>
+File: imagenes/doxy6.PNG Graphic file (type png)
+ <use imagenes/doxy6.PNG>
+Package pdftex.def Info: imagenes/doxy6.PNG used on input line 382.
+(pdftex.def)             Requested size: 345.0pt x 274.10344pt.
+
+Overfull \hbox (0.9184pt too wide) in paragraph at lines 379--385
+[]\OT1/cmr/m/n/10 Por ^^Sulti-mo ir a la pes-ta~na run y eje-cu-tar el pro-yec-
+to, aqu^^S^^P tam-bi^^Sen podr^^Sa vi-
+ []
+
+[12 <./imagenes/doxy5.PNG>]
+<imagenes/doxy7.PNG, id=84, 1441.63594pt x 410.2828pt>
+File: imagenes/doxy7.PNG Graphic file (type png)
+
+<use imagenes/doxy7.PNG>
+Package pdftex.def Info: imagenes/doxy7.PNG used on input line 390.
+(pdftex.def)             Requested size: 345.0pt x 98.1819pt.
+
+<imagenes/doxy8.PNG, id=85, 1443.89438pt x 290.58563pt>
+File: imagenes/doxy8.PNG Graphic file (type png)
+
+<use imagenes/doxy8.PNG>
+Package pdftex.def Info: imagenes/doxy8.PNG used on input line 396.
+(pdftex.def)             Requested size: 345.0pt x 69.4316pt.
+
+<imagenes/doxy9.PNG, id=86, 817.55438pt x 667.74469pt>
+File: imagenes/doxy9.PNG Graphic file (type png)
+
+<use imagenes/doxy9.PNG>
+Package pdftex.def Info: imagenes/doxy9.PNG used on input line 402.
+(pdftex.def)             Requested size: 345.0pt x 281.7856pt.
+ [13 <./imagenes/doxy6.PNG> <./imagenes/doxy7.PNG>]
+<imagenes/doc2.png, id=93, 453.19313pt x 141.52875pt>
+File: imagenes/doc2.png Graphic file (type png)
+ <use imagenes/doc2.png>
+Package pdftex.def Info: imagenes/doc2.png used on input line 410.
+(pdftex.def)             Requested size: 345.0pt x 107.74004pt.
+
+<imagenes/doc3.PNG, id=94, 776.9025pt x 325.96782pt>
+File: imagenes/doc3.PNG Graphic file (type png)
+ <use imagenes/doc3.PNG>
+Package pdftex.def Info: imagenes/doc3.PNG used on input line 416.
+(pdftex.def)             Requested size: 345.0pt x 144.75429pt.
+
+[14 <./imagenes/doxy8.PNG> <./imagenes/doxy9.PNG>]
+<imagenes/doxyfinal.png, id=100, 722.7pt x 535.7616pt>
+File: imagenes/doxyfinal.png Graphic file (type png)
+
+<use imagenes/doxyfinal.png>
+Package pdftex.def Info: imagenes/doxyfinal.png used on input line 428.
+(pdftex.def)             Requested size: 345.0pt x 255.75653pt.
+ [15 <./imagenes/doc2.png> <./imagenes/doc3.PNG>]
+<imagenes/doc4.png, id=106, 365.86688pt x 98.61844pt>
+File: imagenes/doc4.png Graphic file (type png)
+ <use imagenes/doc4.png>
+Package pdftex.def Info: imagenes/doc4.png used on input line 441.
+(pdftex.def)             Requested size: 345.0pt x 92.99927pt.
+
+<imagenes/doc5.png, id=107, 444.91219pt x 144.54pt>
+File: imagenes/doc5.png Graphic file (type png)
+ <use imagenes/doc5.png>
+Package pdftex.def Info: imagenes/doc5.png used on input line 450.
+(pdftex.def)             Requested size: 345.0pt x 112.08128pt.
+
+[16 <./imagenes/doxyfinal.png> <./imagenes/doc4.png>]
+<imagenes/doc6.png, id=113, 770.88pt x 258.9675pt>
+File: imagenes/doc6.png Graphic file (type png)
+ <use imagenes/doc6.png>
+Package pdftex.def Info: imagenes/doc6.png used on input line 459.
+(pdftex.def)             Requested size: 345.0pt x 115.89809pt.
+
+[17 <./imagenes/doc5.png> <./imagenes/doc6.png>] [18] (./PEC3.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3311 strings out of 493304
+ 44786 string characters out of 6139871
+ 111270 words of memory out of 5000000
+ 6682 multiletter control sequences out of 15000+600000
+ 9496 words of font info for 36 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 37i,6n,26p,394b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on PEC3.pdf (18 pages, 1623283 bytes).
+PDF statistics:
+ 137 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+

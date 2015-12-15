@@ -1,0 +1,499 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INTRODUCCIÓN AL DESARROLLO DE SOFTWARE
+% PEC 3: CONTROL DE VERSIONES Y DOCUMENTACIÓN
+% AUTOR: PAULA FIGUEROA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% Esto es para poder escribir acentos directamente:
+\usepackage[latin1]{inputenc}
+% Esto es para que el LaTeX sepa que el texto está en español:
+\usepackage[spanish]{babel}
+
+% Paquetes de la AMS:
+\usepackage{amsmath, amsthm, amsfonts}
+
+% Paquete para imagenes
+\usepackage{graphicx}
+
+% Paquete float
+\usepackage{float} 
+
+% Teoremas
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposición}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definición}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observación}
+
+% Atajos.
+% Se pueden definir comandos nuevos para acortar cosas que se usan
+% frecuentemente. Como ejemplo, aquí se definen la R y la Z dobles que
+% suelen representar a los conjuntos de números reales y enteros.
+%--------------------------------------------------------------------------
+
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+
+% De la misma forma se pueden definir comandos con argumentos. Por
+% ejemplo, aquí definimos un comando para escribir el valor absoluto
+% de algo más fácilmente.
+%--------------------------------------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+
+% Operadores.
+% Los operadores nuevos deben definirse como tales para que aparezcan
+% correctamente. Como ejemplo definimos en jacobiano:
+%--------------------------------------------------------------------------
+\DeclareMathOperator{\Jac}{Jac}
+
+%--------------------------------------------------------------------------
+\title{PEC 3: Control de Versiones y Documentación}
+\author{Paula Andrea Figueroa\\
+}
+
+\begin{document}
+\maketitle
+
+\section{Introducci\'on}
+Para la primera sección de control de versiones se trabajo con git y su complemento github, con el fin de provee un sistema controlador de versiones, en este caso git, y un repositorio remoto como github. A través de la primera sección se describe todo el procedimiento relacionado a la instalación, uso y conexión de git con github y su posterior uso en equipos de trabajo.
+
+Para la segunda sección se trabajó la documentación del código filtros.c y filtros.h a través del software doxygen, que provee etiquetas que permiten documentar el software describiendo las funciones que realiza, los parámetros de entrada y salida.
+
+Para la realización de latex se realizó las instalaciones del paquete completo de latex para Ubuntu 14.10 y se empezó a realizar el documento a través del manual de latex en línea.
+
+Por último en las conclusiones se muestra los resultados obtenidos, aprendizaje y dificultades encontradas.
+
+
+
+\section{Control de Versiones}
+Para esta práctica se trabajará con git y con github. Git es el sistema de control de versiones mientras github es una red social que permite almacenar los proyecto opensource en línea. Es decir git permite manipular los proyectos que se encuentran almacenados en github.
+
+Para poder tener acceso a los proyectos debe tener una cuenta en github.
+
+También se pueden mencionar secciones de la misma forma: ver sección
+%\ref{sec:nada}. O citar algo de la bibliografía: \cite{Cd94}.
+
+\subsection{Instalar GIT y GITHUB}\label{sec:git}
+\begin{enumerate}
+  \item Se instala git con el comando: apt-get install git.	
+  \item Con git --version para ver la versión instalada.
+  
+  \begin{figure}[!ht]
+   \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/instalagit}
+  	 \caption{Version de git}
+  	  \label{fig:instalagit}
+	\end{figure}
+	
+	\item Obtener una cuenta en github ingresando a https:\\www.github.com
+	\item Completar el siguiente formulario:
+		\begin{figure}[H]
+     		\centering
+     		 \includegraphics[width=0.7\textwidth]{imagenes/registrargithub}
+          		\caption{Formulario de Registro de Github}
+          		 \label{fig:github}
+       	 \end{figure}
+	        
+     \item Verificar la cuenta ingresando a su correo electr\'onico
+     
+     
+	
+\end{enumerate}
+
+\subsection{Configurar el repositorio}\label{sec:repositorio}
+\begin{enumerate}
+  \item Se configura un usuario para identificarse al hacer los committs en git con:
+	git config --global user.name "pfigueroap"
+	git config --global user.email ?pfigueroap@uoc.edu?  
+
+  \begin{figure}[H]
+   \centering
+    \includegraphics[width=1.0\textwidth]{imagenes/usu}
+  	 \caption{Configuraci\'on de usuario en git}
+  	  \label{fig:usuario}
+	\end{figure}
+	
+  \item Se crea el directorio que se va subir en git y se inicializa 
+  
+   \begin{figure}[H]
+   \centering
+    \includegraphics[width=1.0\textwidth]{imagenes/repo2}
+  	 \caption{Creación e inicializaci\'on del repositorio}
+  	  \label{fig:directorio}
+	\end{figure}
+  
+  \item Se copian los dos archivos filtros.c y filtros.h en la carpeta y se verificar que el .git en el repositorio se encuentre creado
+  
+   \begin{figure}[H]
+   \centering
+    \includegraphics[width=1.0\textwidth]{imagenes/repo4}
+  	 \caption{Copiar filtro.c y filtro.h}
+  	  \label{fig:repo4}
+	\end{figure}
+	
+   \begin{figure}[H]
+   \centering
+    \includegraphics[width=1.0\textwidth]{imagenes/repo5}
+  	 \caption{Verificaci\'on de archivos en el repositorio}
+  	  \label{fig:repo5}
+	\end{figure}
+	
+   \item Se crea un fichero README en el directorio libsrc
+   
+   \begin{figure}[H]
+   \centering
+    \includegraphics[width=1.0\textwidth]{imagenes/repo3}
+  	 \caption{Creaci\'on de fichero README}
+  	  \label{fig:repo3}
+	\end{figure}
+  
+   \item Se van añadir al repositorio con los comandos:
+   
+   Para a\~nadir uno a uno:
+   
+	git add README
+	
+	git add filtros.c
+	
+	git add filtros.h
+	
+   Para añadir todo de una vez:
+   
+    con git add -all  
+
+   \begin{figure}[H]
+   \centering
+    \includegraphics[width=1.0\textwidth]{imagenes/repo6}
+  	 \caption{Adicionar ficheros al git}
+  	  \label{fig:repo6}
+	\end{figure} 
+
+  \item Se verifica el estado de git con el comando: git status
+  \begin{figure}[H]
+   \centering
+    \includegraphics[width=1.0\textwidth]{imagenes/repo7}
+  	 \caption{Estados de ficheros en git}
+  	  \label{fig:repo7}
+	\end{figure}
+	
+	\item Hacer commit
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo8}
+  	    \caption{Estados de ficheros en git}
+  	     \label{fig:repo8}
+	 \end{figure}
+	
+	\item Con el comando git log se verifica el estado del commit
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo9}
+  	    \caption{Log del commit}
+  	     \label{fig:repo9}
+	 \end{figure}
+	
+  
+    \end{enumerate}
+   
+\subsection{Subir al repositorio remoto}\label{sec:remoto}
+
+ \begin{enumerate}
+	\item Agregar el repositorio a github en www.github.com
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo10}
+  	    \caption{Crear un repositorio en github}
+  	     \label{fig:repo10}
+	 \end{figure}
+
+	\item Se crea el repositorio llenando el formulario:
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo12}
+  	    \caption{Crear un repositorio en github}
+  	     \label{fig:repo12}
+	 \end{figure}	
+	 
+	\item Con el siguiente comando agregamos el repositorio que ya existe, con esta linea se le indica a git cual el repositorio remoto donde se alojaran los archivos:
+	
+git remote add origin https://github.com/pfigueroapuoc/libsrc.git
+
+
+	\item Se agrega los archivos al repositorio remoto con el comando:
+	
+	git push -u origin master
+	
+El cual solicita el login y contraseña de Github
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo13}
+  	    \caption{Indicando a git el repositorio remoto y traslando los archivos al mismo}
+  	     \label{fig:repo13}
+	 \end{figure}
+	  
+	\item De este modo el proyecto ya se encuentra alojado remotamente en github
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo14}
+  	    \caption{Repositorio en github}
+  	     \label{fig:repo14}
+	 \end{figure}
+ 
+ \end{enumerate}
+
+\subsection{Acceder a un repositorio y obtener copias locales}\label{sec:equipo}
+
+ \begin{enumerate}
+ \item En caso de que otra persona o el mismo creador desee obtener una copia local del repositorio deberá ingresar el comando 
+
+git clone https://github.com/pfigueroapuoc/libsrc.git
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo15}
+  	    \caption{Obtener una copia local de un repositorio}
+  	     \label{fig:repo15}
+	 \end{figure}
+ \item Para participar en el repositorio desde github simplemente es buscar el repositorio
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo16}
+  	    \caption{Obtener una copia local de un repositorio}
+  	     \label{fig:repo16}
+	 \end{figure}
+
+ 
+ \item Y una vez encontrado darle en fork
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo17}
+  	    \caption{Obtener una copia local de un repositorio}
+  	     \label{fig:repo17}
+	 \end{figure}
+
+ \item Se verifica el email y ya se puede acceder al repositorio.
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo18}
+  	    \caption{Obtener una copia local de un repositorio}
+  	     \label{fig:repo18}
+	 \end{figure}
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/repo19}
+  	    \caption{Obtener una copia local de un repositorio}
+  	     \label{fig:repo19}
+	 \end{figure}
+	 
+ \end{enumerate}
+ 
+% Seccion 3: Documentacion
+ 
+\section{Documentaci\'on del C\'odigo}
+
+Para la documentar el código se uso el software doxygen con su herramienta gráfica doxygen-gui.
+
+\begin{enumerate}
+ \item Se instala doxygen y doxygen-gui con el comando: sudo apt-get install doxygen doxygen-gui
+	 
+ \item Con un editor de texto se abre cada fichero filtros.c y filtros.h
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy1}
+  	    \caption{Documentaci\'on filtros.h}
+  	     \label{fig:doxy1}
+	 \end{figure}
+	 
+Cada etiqueta permite:
+\begin{itemize}
+\item @file: muestra el fichero que se esta documentando filtro.h
+\item @brief muestra una descripci\'on corta
+\item La etiqueta \'@ author muestra el autor del c\'odigo
+\item Para escribir descripciones m\'as largas separadas en parrafos se deben dejar espacios entre l\'inea y l\'inea.
+\item \'@param indica los parametros de entrada o salida
+\item \'@see permite crear enlaces a otras funciones
+\item verbatim y endverbatim permite crear un ejemplo
+\item En la siguiente imagen se muestra como comentar bloques de c\'odigo
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy10}
+  	    \caption{Comentar bloques de c\'odigo}
+  	     \label{fig:doxy10}
+	 \end{figure}
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy11}
+  	    \caption{Comentar bloques de c\'odigo}
+  	     \label{fig:doxy11}
+	 \end{figure}
+\end{itemize}
+
+ \item En filtros.h se realiza la codificaci\'on necesaria para modificar el mainpage o index que mostrar\'a el html
+
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy2}
+  	    \caption{Main Page filtros.h}
+  	     \label{fig:doxy2}
+	 \end{figure}
+	 
+La etiqueta \'section permite añadir secciones en la documentaci\'on
+
+ \item A trav\'es del gui se puede crear la documentaci\'on para ello se debe configurar en la pestaña Wizard topic project el nombre del proyecto, el directorio fuente, es decir donde se encuentra filtros.c y filtros.h y hacia que directorio ir\'ra lo creado por doxygen en este caso ser\'a un directo doc.
+ 
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy3}
+  	    \caption{Configuraci\'on de Doxygen GUI}
+  	     \label{fig:doxy3}
+	 \end{figure}
+	 
+ \item En el topic mode seleccione el proyecto que desea documentar, en este caso es c 
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy4}
+  	    \caption{Seleccionando tipo de proyecto}
+  	     \label{fig:doxy4}
+	 \end{figure}
+
+ \item En el topic Output seleccione la salida que para este caso es html
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy5}
+  	    \caption{Salida de la documentaci\'on en HTML }
+  	     \label{fig:doxy5}
+	 \end{figure}
+
+ \item Por \'ultimo ir a la pestaña run y ejecutar el proyecto, aqu\'i tambi\'en podr\'a visualizar como quedar\'a el html
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy6}
+  	    \caption{Ejecutar el Proyecto}
+  	     \label{fig:doxy6}
+	 \end{figure}
+	 
+ \item AL final se puede obtener algo como:
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy7}
+  	    \caption{Documentaci\'on en HTML}
+  	     \label{fig:doxy7}
+	 \end{figure}
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy8}
+  	    \caption{Documentaci\'on en HTML}
+  	     \label{fig:doxy8}
+	 \end{figure}
+	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxy9}
+  	    \caption{Documentaci\'on en HTML}
+  	     \label{fig:doxy9}
+	 \end{figure}
+	 
+ \item Se hace el commit al github
+ 	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doc2}
+  	    \caption{Agregando los cambios al repositorio}
+  	     \label{fig:doc2}
+	 \end{figure}   
+ 	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doc3}
+  	    \caption{Agregando los cambios al repositorio}
+  	     \label{fig:doc3}
+	 \end{figure}  
+
+
+	 
+\end{enumerate}
+
+Al final con otra configuración se pueden obtener los siguientes resultados como se muestra en la imagen:
+ 	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doxyfinal}
+  	    \caption{Configuración final de la documentación con Doxygen}
+  	     \label{fig:doxyfinal}
+	 \end{figure} 
+	 
+	 
+
+\section{Documento Latex en el repositorio}
+
+\begin{enumerate}
+ \item Se crea una carpeta llamada descripcion \_ proceso en el repositorio local y en ella se copia el TeX, las imagenes y el documento generado en pdf.
+ 	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doc4}
+  	    \caption{Copiando a descripcion \_ proceso}
+  	     \label{fig:doc4}
+	 \end{figure} 
+
+
+ \item Posteriormente se hace adiciona y se realiza un commit para incluir esta informaci\'on y se aplica un push para montarlo al repositorio
+ 	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doc5}
+  	    \caption{Copiando a descripcion \_ proceso}
+  	     \label{fig:doc5}
+	 \end{figure}
+
+
+ \item Se actualiza el repositorio
+ 	 \begin{figure}[H]
+   	  \centering
+    	   \includegraphics[width=1.0\textwidth]{imagenes/doc6}
+  	    \caption{Copiando a descripcion \_ proceso}
+  	     \label{fig:doc6}
+	 \end{figure}
+
+\end{enumerate}
+
+%Conclusiones
+
+\section{Conclusiones}
+
+Después de haber realizado la práctica se puede concluir que:
+
+Para el caso del controlador de versiones:
+\begin{itemize}
+	\item Los controladores de versiones son muy importantes en cualquier proyecto de desarrollo de software pues facilita tener a disposición cualquier versión y controlar los cambios que se han realizado en el proyecto.	
+	\item Git es un controlador de versiones fácil de instalar y manejar, aunque se realiza por consola los pasos prácticamente son muy intuitivos y se obtienen resultados muy claros.
+	\item La integración con github ofrece facilidad de publicar proyectos de desarrollo disponibles para toda la comunidad.
+	\item El hecho que para poder configurar los usuarios permitidos en los proyectos Github requiera pagos implica un inconveniente en el caso que se desee restrigir o controlar los cambios que se realizan en el proyecto y las copias y ventas que se hagan con el, es recomendable marcar cada componente del proyecto con la licencia que ayude a protegerlo.
+	\item Git y github tienen ciertos inconvenientes con las modificaciones al tiempo que realicen los colaboradores pero ofrece soluciones de permitir guardar los cambios detectados aunque el desarrollador deba modificarlo manualmente.
+\end{itemize}
+
+Para el caso de la documentación:
+\begin{itemize}
+\item Es fácil obtener un manual/documentación estructurado en html de un desarrollo y siendo así es facil incluirla en cualquier desarrollo.
+\item Al igual de latex se debe tener conocimiento de las etiquetas y del lenguaje manejado, aunque se encuentra muy bien documentado en su página principal.
+\item La parte gráfica facilita la compilación aunque también se puede realizar por consola.
+\end{itemize}
+
+Para el caso de latex:
+\begin{itemize}
+\item Es estable, multiplataforma, es gratuito y permite estructurar fácilmente los documentos 
+\item Se debe tener especial cuidado en la forma de poner las etiquetas, pues una etiqueta mal cerrada, un parámetro mal escrito implica un error en la compilación y no será posible ver el documento.
+\item La curva de aprendizaje es bastante amplia, al no ser tan gráfico como los demás procesadores presenta un grado de dificultad.
+\item Hasta que no se compile no se tiene una visón del documento, lo que representa una dificultad y requiere de tiempo en caso que no se tenga habilidad se demorá más en generar un documento.
+\item Los gráficos no se insertan tan fácilmente, presenté dificultad respecto a ubicarlos donde quería en este caso debería tener en el begin{figure} el parámetro H entre corchetes.
+
+\end{itemize}
+
+
+\end{document}

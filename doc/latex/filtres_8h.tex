@@ -1,0 +1,233 @@
+\hypertarget{filtres_8h}{}\section{D\+:/\+Dropbox/\+Universidad\+Maestría/\+Semestre I\+I\+I/\+D\+E\+S\+A\+R\+R\+O\+L\+L\+O D\+E S\+O\+F\+T\+W\+A\+R\+E/\+P\+E\+C 3/\+Archivos/filtres.h File Reference}
+\label{filtres_8h}\index{D\+:/\+Dropbox/\+Universidad\+Maestría/\+Semestre I\+I\+I/\+D\+E\+S\+A\+R\+R\+O\+L\+L\+O D\+E S\+O\+F\+T\+W\+A\+R\+E/\+P\+E\+C 3/\+Archivos/filtres.\+h@{D\+:/\+Dropbox/\+Universidad\+Maestría/\+Semestre I\+I\+I/\+D\+E\+S\+A\+R\+R\+O\+L\+L\+O D\+E S\+O\+F\+T\+W\+A\+R\+E/\+P\+E\+C 3/\+Archivos/filtres.\+h}}
+
+
+Cabeceras de las filtros ofrecidos en filtros.\+c.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{filtres_8h_a70af81d8e422b34c60277715a0bf44f5}{fs\+\_\+head} (int fd)
+\begin{DoxyCompactList}\small\item\em fs\+\_\+head\+: Este filtro mostrará las tres primeras líneas leídas. Las líneas están separadas por el carácter salto de línea \textquotesingle{}\textbackslash{} n\textquotesingle{} \end{DoxyCompactList}\item 
+void \hyperlink{filtres_8h_afd7a1b36922bf518c9bd7e8a848df96a}{fs\+\_\+wc} (int fd)
+\begin{DoxyCompactList}\small\item\em fs\+\_\+wc\+: Este filtro contará el número de caracteres, palabras y líneas de la entrada y lo mostrará por pantalla \end{DoxyCompactList}\item 
+void \hyperlink{filtres_8h_a643063470b5a645fd962404c2850c3bd}{fs\+\_\+nl} (int fd)
+\begin{DoxyCompactList}\small\item\em fs\+\_\+nl\+: Este filtro numera les líneas de la entrada. \end{DoxyCompactList}\item 
+void \hyperlink{filtres_8h_a9a8dabec27d785f7ec81e8a498b9f5a3}{fs\+\_\+cut} (int fd, int col)
+\begin{DoxyCompactList}\small\item\em fs\+\_\+cut\+: Este filtro muestra la palabra en la posición col de cada línea \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cabeceras de las filtros ofrecidos en filtros.\+c. 
+
+Se listas los filtros principales\+:
+
+fs\+\_\+head, fs\+\_\+wc, fs\+\_\+nl y fs\+\_\+cut
+
+Cada filtro tiene como entrada un archivo representado por la variable (fd), y fs\+\_\+cut tiene un parámetro adicional que es un entero el cual indica la columna a imprimir
+
+\begin{DoxyAuthor}{Author}
+Paula Figueroa.
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+04/12/2015. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{filtres_8h_a9a8dabec27d785f7ec81e8a498b9f5a3}{}\index{filtres.\+h@{filtres.\+h}!fs\+\_\+cut@{fs\+\_\+cut}}
+\index{fs\+\_\+cut@{fs\+\_\+cut}!filtres.\+h@{filtres.\+h}}
+\subsubsection[{fs\+\_\+cut(int fd, int col)}]{\setlength{\rightskip}{0pt plus 5cm}void fs\+\_\+cut (
+\begin{DoxyParamCaption}
+\item[{int}]{fd, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)}\label{filtres_8h_a9a8dabec27d785f7ec81e8a498b9f5a3}
+
+
+fs\+\_\+cut\+: Este filtro muestra la palabra en la posición col de cada línea 
+
+Descripción\+: El filtro recibe el archivo y la columna por la cual se quiere cortar el archivo, la primera palabra de cada línea estará en la posición 1, por lo que si se ingresa 1 se mostrará la primera palabra de cada línea que encuentra en el archivo.
+
+\begin{DoxyReturn}{Returns}
+Devuelve el archivo partido según la columna seleccionada
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & variable de entrada la cual es un archivo de texto seleccionado por el usuario\\
+\hline
+{\em col} & entero que indica la posición de la columna se desea imprimir en el archivo.\\
+\hline
+\end{DoxyParams}
+Ejemplo\+: \begin{DoxyVerb}    El archivo de texto de entrada es:
+    Besa el aura que gime blandamente
+    Las leves ondas que jugando riza;
+    El sol besa a la nube en occidente
+    Y de purpura y oro la matiza;
+    La llama en derredor del tronco ardiente
+    Por besar a otra llama se desliza,
+    Y hasta el sauce, inclinandose a su peso,
+    Al rio, que le besa, vuelve un beso.
+    
+ La salida es:
+    el
+    leves
+    sol
+    de
+    llama
+    besar
+    hasta
+    rio
+\end{DoxyVerb}
+ $<$ Se debe tener en cuenta el salto de línea
+
+$<$ e ir contando la cantidad de palabras si estas son mayores o iguales al número ingresado en col se debe imprimir en pantalla. Para controlar que no se imprima saltos de linea en caso que la primera línea se encuentre vacía se debe ingresar en la condición que nc es mayor o igual a cero. \hypertarget{filtres_8h_a70af81d8e422b34c60277715a0bf44f5}{}\index{filtres.\+h@{filtres.\+h}!fs\+\_\+head@{fs\+\_\+head}}
+\index{fs\+\_\+head@{fs\+\_\+head}!filtres.\+h@{filtres.\+h}}
+\subsubsection[{fs\+\_\+head(int fd)}]{\setlength{\rightskip}{0pt plus 5cm}void fs\+\_\+head (
+\begin{DoxyParamCaption}
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\label{filtres_8h_a70af81d8e422b34c60277715a0bf44f5}
+
+
+fs\+\_\+head\+: Este filtro mostrará las tres primeras líneas leídas. Las líneas están separadas por el carácter salto de línea \textquotesingle{}\textbackslash{} n\textquotesingle{} 
+
+Descripción\+: Este filtro esta compuesto por un contador llamado count inicializado en cero y un caracter c. Con un ciclo while se recorre el archivo caracter a caracter usando la función read, cuando encuentra un salto de línea incrementa count hasta que este sea 3 o mayor e imprime.
+
+Ejemplo\+: \begin{DoxyVerb} El archivo de texto de entrada es:
+    Besa el aura que gime blandamente
+    Las leves ondas que jugando riza;
+    El sol besa a la nube en occidente
+    Y de purpura y oro la matiza;
+    La llama en derredor del tronco ardiente
+    Por besar a otra llama se desliza,
+    Y hasta el sauce, inclinandose a su peso,
+    Al rio, que le besa, vuelve un beso.
+    
+ La salida es:
+    Besa el aura que gime blandamente
+    Las leves ondas que jugando riza;
+    El sol besa a la nube en occidente
+\end{DoxyVerb}
+
+
+\begin{DoxyReturn}{Returns}
+Devuelve las tres primeras líneas del archivo de texto
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & variable de entrada la cual es un archivo de texto seleccionado por el usuario \\
+\hline
+\end{DoxyParams}
+$<$ count\+: variable que se declara dentro de la función, tipo entero, es un contador que permite determinar la cantidad de lineas que se tienen en un texto, cada vez que dentro del while se encuentra un salto de línea se incrementa el contador, una vez llega a 3 se sale del ciclo.
+
+$<$ c\+: es una variable que se declara dentro de la función, tipo caracter en el cual se irá almacenando el caracter que se lee en el ciclo while
+
+$<$ read\+: requiere del archivo que se va leer (fd), se le asigna la dirección de memoria de c (\&c) para que aquí almacene cada caracteres leido y el 1 le indica que es de 1 a 1. Mientras el contador sea menor a 3 se escribe cada caracter con el comando
+
+$<$ write\+: si se encuentra un salto de línea se incrementa el contador, de esta manera se controla que se escriban las tres primeras líneas.
+
+$<$ El if permite ir incrementando el count cuando c sea un salto de linea \hypertarget{filtres_8h_a643063470b5a645fd962404c2850c3bd}{}\index{filtres.\+h@{filtres.\+h}!fs\+\_\+nl@{fs\+\_\+nl}}
+\index{fs\+\_\+nl@{fs\+\_\+nl}!filtres.\+h@{filtres.\+h}}
+\subsubsection[{fs\+\_\+nl(int fd)}]{\setlength{\rightskip}{0pt plus 5cm}void fs\+\_\+nl (
+\begin{DoxyParamCaption}
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\label{filtres_8h_a643063470b5a645fd962404c2850c3bd}
+
+
+fs\+\_\+nl\+: Este filtro numera les líneas de la entrada. 
+
+Descripción\+: Este filtro permite enumerar cada línea en el archivo de texto. Por ejemplo \begin{DoxyVerb}    El archivo de texto de entrada es:
+    Besa el aura que gime blandamente
+    Las leves ondas que jugando riza;
+    El sol besa a la nube en occidente
+    Y de purpura y oro la matiza;
+    La llama en derredor del tronco ardiente
+    Por besar a otra llama se desliza,
+    Y hasta el sauce, inclinandose a su peso,
+    Al rio, que le besa, vuelve un beso.
+    
+ La salida es:
+    1 Besa el aura que gime blandamente
+    2 Las leves ondas que jugando riza;
+    3 El sol besa a la nube en occidente
+    4 Y de purpura y oro la matiza;
+    5 La llama en derredor del tronco ardiente
+    6 Por besar a otra llama se desliza,
+    7 Y hasta el sauce, inclinandose a su peso,
+    8 Al rio, que le besa, vuelve un beso.
+\end{DoxyVerb}
+
+
+\begin{DoxyReturn}{Returns}
+Devuelve cada línea numerada
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & variable de entrada la cual es un archivo de texto seleccionado por el usuario \\
+\hline
+\end{DoxyParams}
+$<$ new es una bandera para controlar las lineas, cada vez que encuentra un salto de línea coloca el número que va acumulando en la variable nl
+
+$<$ Usa printstr para imprimir los números al inicio de cada línea de texto
+
+\begin{DoxySeeAlso}{See also}
+void \hyperlink{filtres_8c_a6bc4e3de38e285d91873339766f429b8}{printstr(int num)} 
+\end{DoxySeeAlso}
+\hypertarget{filtres_8h_afd7a1b36922bf518c9bd7e8a848df96a}{}\index{filtres.\+h@{filtres.\+h}!fs\+\_\+wc@{fs\+\_\+wc}}
+\index{fs\+\_\+wc@{fs\+\_\+wc}!filtres.\+h@{filtres.\+h}}
+\subsubsection[{fs\+\_\+wc(int fd)}]{\setlength{\rightskip}{0pt plus 5cm}void fs\+\_\+wc (
+\begin{DoxyParamCaption}
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\label{filtres_8h_afd7a1b36922bf518c9bd7e8a848df96a}
+
+
+fs\+\_\+wc\+: Este filtro contará el número de caracteres, palabras y líneas de la entrada y lo mostrará por pantalla 
+
+Descripción\+: Este filtro cuenta los caracteres, palabras y líneas, dados por los separadores. Los separadores de palabras son los caracteres salto de línea \textquotesingle{}\textbackslash{} n\textquotesingle{}, tabulador \textquotesingle{}\textbackslash{} t\textquotesingle{} y espacio en blanco \textquotesingle{}\textquotesingle{}, y como separador de líneas sólo el salto de línea \textquotesingle{}\textbackslash{} n\textquotesingle{}. Dos palabras pueden estar separadas por 1 o más caracteres separadores
+
+\begin{DoxyReturn}{Returns}
+Devuelve la cantidad de caracteres, palabras y líneas que tiene un archivo de texto.
+\end{DoxyReturn}
+Ejemplo\+: \begin{DoxyVerb} El archivo de texto de entrada es:
+    Besa el aura que gime blandamente
+    Las leves ondas que jugando riza;
+    El sol besa a la nube en occidente
+    Y de purpura y oro la matiza;
+    La llama en derredor del tronco ardiente
+    Por besar a otra llama se desliza,
+    Y hasta el sauce, inclinandose a su peso,
+    Al rio, que le besa, vuelve un beso.
+    
+ La salida es:
+    281 58 8
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & variable de entrada la cual es un archivo de texto seleccionado por el usuario \\
+\hline
+\end{DoxyParams}
+$<$ nl\+: contador de líneas np\+: contador de palabras nc\+: contador de caracteres sep es una bandera para controlar la cantidad de delimitadores que puedan separar una palabra
+
+$<$ c\+: donde se almancerá cada caracter leido del archivo
+
+$<$ nc++\+: cada vez que se lea un caracter en el archivo se incrementa el contador
+
+$<$ Si el valor almacenado en c al recorrer el archivo es un salto de línea se incrementa nl
+
+$<$ Si es un espacio o un tabulador se pasa al siguiente case donde se evalua
+
+$<$ Si sep es diferente de 0 se incrementa la palabra y se hace sep = 1
+
+$<$ Si sep es 1 es porque encontró un delimitador de palabra ya sea tabulador o espacio
+
+$<$ En cualquier caso que no encuentre ningún delimitador sep siempre será 0
+
+\begin{DoxySeeAlso}{See also}
+void \hyperlink{filtres_8c_a6bc4e3de38e285d91873339766f429b8}{printstr(int num)} 
+\end{DoxySeeAlso}
